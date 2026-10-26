@@ -1,6 +1,6 @@
-# Cài đặt và sử dụng Hỗ trợ học UTT
+# Cài đặt và sử dụng StudyQueue for UTT
 
-[← Về trang dự án](../README.md) · [Tải ZIP 1.3.0](https://github.com/VDtrunG-Dev/utt-tool-study-public/raw/refs/heads/main/downloads/utt-study-queue-v1.3.0.zip) · [Báo lỗi](https://github.com/VDtrunG-Dev/utt-tool-study-public/issues/new/choose)
+[← Về trang dự án](../README.md) · [Tải ZIP 1.3.1](https://github.com/VDtrunG-Dev/utt-tool-study-public/raw/refs/heads/main/downloads/utt-study-queue-v1.3.1.zip) · [Báo lỗi](https://github.com/VDtrunG-Dev/utt-tool-study-public/issues/new/choose)
 
 ## 1. Chuẩn bị
 
@@ -13,7 +13,7 @@ Không cần cài Node.js, Python hoặc phần mềm lập trình để sử d�
 ## 2. Tải và giải nén
 
 1. Vào [trang phát hành](https://github.com/VDtrunG-Dev/utt-tool-study-public/releases).
-2. Bấm liên kết **Tải ZIP 1.3.0** ở đầu trang này hoặc trong ghi chú bản phát hành để tải **`utt-study-queue-v1.3.0.zip`**. Đây là gói tiện ích gọn, dễ cài.
+2. Bấm liên kết **Tải ZIP 1.3.1** ở đầu trang này hoặc trong ghi chú bản phát hành để tải **`utt-study-queue-v1.3.1.zip`**. Đây là gói tiện ích gọn, dễ cài.
 3. Trên Windows, nhấp chuột phải file ZIP → **Extract All / Giải nén tất cả**. Chọn thư mục cố định rồi bấm **Extract / Giải nén**.
 4. Mở thư mục đã giải nén. Bạn phải thấy những file sau:
 
@@ -22,6 +22,8 @@ UTT-Study-Queue/
 ├── manifest.json
 ├── core.js
 ├── adapter.js
+├── styles.js
+├── view.js
 ├── content.js
 ├── bridge.js
 ├── background.js
@@ -37,7 +39,7 @@ UTT-Study-Queue/
 2. Bật công tắc **Developer mode / Chế độ dành cho nhà phát triển** ở góc trên bên phải.
 3. Bấm **Load unpacked / Tải tiện ích đã giải nén**.
 4. Chọn thư mục có `manifest.json`, rồi bấm **Select Folder / Chọn thư mục**.
-5. Kiểm tra thẻ **Hỗ trợ học trực tuyến cho UTT E-learning (không chính thức)** xuất hiện, công tắc đang bật và phiên bản là **1.3.0**.
+5. Kiểm tra thẻ **StudyQueue for UTT - Trợ lý học tập** xuất hiện, công tắc đang bật và phiên bản là **1.3.1**.
 6. Bấm biểu tượng mảnh ghép trên thanh công cụ Chrome. Có thể ghim tiện ích UTT để dễ mở.
 
 Cách nạp thư mục và cập nhật được Chrome mô tả trong [hướng dẫn chính thức](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked).
@@ -48,7 +50,7 @@ Cách nạp thư mục và cập nhật được Chrome mô tả trong [hướng
 2. Đăng nhập trên trang trường như bình thường.
 3. Tải lại trang UTT bằng nút Reload của Chrome. Đây là bước cần thiết nếu trang đã mở từ trước khi cài tiện ích.
 4. Bấm nút **📚 Danh sách học** ở góc dưới bên phải, hoặc biểu tượng UTT trên thanh công cụ.
-5. Kiểm tra dòng đầu bảng hiện **UTT · TRỢ LÝ VIDEO · 1.3.0**.
+5. Kiểm tra dòng đầu bảng hiện **UTT · TRỢ LÝ VIDEO · 1.3.1**.
 
 Bấm biểu tượng tiện ích sẽ mở bảng ngay trong trang UTT, không mở một cửa sổ popup riêng. Ở trang web khác, bảng UTT không xuất hiện.
 
@@ -92,7 +94,7 @@ Trong lúc đang đọc, chuyển trang hoặc phát, ô chọn được khóa �
 - **Đọc tiến độ** cập nhật bảng của môn hiện tại khi danh sách đang dừng.
 - **Đọc lại tất cả môn** thực hiện lại lượt quét; video cần học được xác định lại từ trang trường.
 - **Dừng** tạm dừng video, hủy việc tự phục hồi đang chờ và giữ trạng thái dừng qua tải lại trang.
-- **Xuất tiến độ** tạo file JSON để bạn lưu hoặc tự kiểm tra. File có thể chứa tên môn và lịch học; xem lại trước khi chia sẻ.
+- Nút **☾/☀** trên đầu panel chuyển giao diện sáng/tối. Mặc định theo hệ thống; lựa chọn được nhớ cho mọi trang UTT.
 
 Giữ máy thức, mạng ổn định và một tab UTT để chạy. Trang UTT có thể tạm dừng video khi tab bị ẩn hoặc khi bạn đổi cửa sổ. Bấm Play trên trình phát nếu Chrome yêu cầu thao tác để cho phép tự phát.
 
@@ -109,7 +111,7 @@ Giữ máy thức, mạng ổn định và một tab UTT để chạy. Trang UTT
 1. Bấm **Dừng** trên UTT.
 2. Tải gói ZIP mới và giải nén ra một thư mục tạm.
 3. Sao chép 8 file tiện ích mới vào **đúng thư mục đã dùng để cài**, chọn thay thế file cũ.
-4. Mở `chrome://extensions`, tìm **Hỗ trợ học trực tuyến cho UTT E-learning (không chính thức)**, bấm biểu tượng **Reload / Tải lại** trên thẻ tiện ích.
+4. Mở `chrome://extensions`, tìm **StudyQueue for UTT - Trợ lý học tập**, bấm biểu tượng **Reload / Tải lại** trên thẻ tiện ích.
 5. Tải lại trang UTT.
 6. Mở bảng và kiểm tra phiên bản mới ở dòng đầu. Bấm **Đọc lại tất cả môn** để cập nhật danh sách nếu cần.
 
@@ -134,7 +136,7 @@ Nếu vẫn lỗi, [gửi báo lỗi](https://github.com/VDtrunG-Dev/utt-tool-st
 
 ## 10. Gỡ tiện ích
 
-Mở `chrome://extensions`, tìm **Hỗ trợ học trực tuyến cho UTT E-learning (không chính thức)** → **Remove / Xóa** → xác nhận. Sau đó tải lại trang UTT. Gỡ tiện ích xóa dữ liệu cục bộ của tiện ích; số phút học đã ghi nhận trên hệ thống trường vẫn do trường lưu.
+Mở `chrome://extensions`, tìm **StudyQueue for UTT - Trợ lý học tập** → **Remove / Xóa** → xác nhận. Sau đó tải lại trang UTT. Gỡ tiện ích xóa dữ liệu cục bộ của tiện ích; số phút học đã ghi nhận trên hệ thống trường vẫn do trường lưu.
 
 ## 11. Ủng hộ
 

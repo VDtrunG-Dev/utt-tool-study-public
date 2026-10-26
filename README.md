@@ -1,10 +1,10 @@
-# Hỗ trợ học UTT ☕
+# StudyQueue for UTT ☕
 
-**Hỗ trợ học trực tuyến cho UTT E-learning (không chính thức)**
+**StudyQueue for UTT - Trợ lý học tập E-learning (không chính thức)**
 
 Tiện ích Chrome giúp theo dõi video còn thiếu tiến độ trên [hệ thống E-learning UTT](https://hoctructuyen.utt.edu.vn/), chọn bài cần xem và phát lần lượt qua các môn.
 
-**[⬇ Tải bản 1.3.0](https://github.com/VDtrunG-Dev/utt-tool-study-public/raw/refs/heads/main/downloads/utt-study-queue-v1.3.0.zip)** · **[Hướng dẫn cài đặt](docs/CAI-DAT.md)** · **[Báo lỗi](https://github.com/VDtrunG-Dev/utt-tool-study-public/issues/new/choose)**
+**[⬇ Tải bản 1.3.1](https://github.com/VDtrunG-Dev/utt-tool-study-public/raw/refs/heads/main/downloads/utt-study-queue-v1.3.1.zip)** · **[Hướng dẫn cài đặt](docs/CAI-DAT.md)** · **[Báo lỗi](https://github.com/VDtrunG-Dev/utt-tool-study-public/issues/new/choose)**
 
 ## Tiện ích làm được gì?
 
@@ -21,12 +21,12 @@ Tiện ích phát video ở **1×**. Trạng thái đạt yêu cầu lấy từ 
 
 ## Cài nhanh trên Chrome
 
-1. [Tải file ZIP 1.3.0](https://github.com/VDtrunG-Dev/utt-tool-study-public/raw/refs/heads/main/downloads/utt-study-queue-v1.3.0.zip), giải nén vào một thư mục cố định, ví dụ `Documents\UTT-Study-Queue`.
-2. Mở thư mục đó và kiểm tra có file `manifest.json` cùng `core.js`, `adapter.js`, `content.js`, `bridge.js`, `background.js`, `icon.png`, `coffee-qr.jpg`.
+1. [Tải file ZIP 1.3.1](https://github.com/VDtrunG-Dev/utt-tool-study-public/raw/refs/heads/main/downloads/utt-study-queue-v1.3.1.zip), giải nén vào một thư mục cố định, ví dụ `Documents\UTT-Study-Queue`.
+2. Mở thư mục đó và kiểm tra có file `manifest.json` cùng `core.js`, `adapter.js`, `styles.js`, `view.js`, `content.js`, `bridge.js`, `background.js`, `icon.png`, `coffee-qr.jpg`.
 3. Mở Chrome, nhập `chrome://extensions` vào thanh địa chỉ rồi nhấn Enter.
 4. Bật **Chế độ dành cho nhà phát triển / Developer mode**.
 5. Bấm **Tải tiện ích đã giải nén / Load unpacked**, chọn thư mục **chứa trực tiếp `manifest.json`**.
-6. Mở UTT, đăng nhập trên trang trường và tải lại trang. Bấm **📚 Danh sách học** ở góc dưới bên phải; dòng đầu phải hiện **1.3.0**.
+6. Mở UTT, đăng nhập trên trang trường và tải lại trang. Bấm **📚 Danh sách học** ở góc dưới bên phải; dòng đầu phải hiện **1.3.1**.
 
 👉 Xem [hướng dẫn đầy đủ](docs/CAI-DAT.md) để biết cách cập nhật, chọn video, xử lý lỗi và gỡ tiện ích. Đây là bản cài bằng thư mục giải nén; chưa có bản trên Chrome Web Store.
 
@@ -55,10 +55,10 @@ Mở ứng dụng thanh toán/ngân hàng để quét mã dưới đây. Kiểm 
 
 ## Phiên bản và kiểm thử
 
-**1.3.0** thêm bảng điều kiện dự thi phần video, chỉ cho tiện ích bấm đúng các nút của môn học và danh sách lớp, chuyển tùy chọn Giữ phát khi chuyển tab sang mặc định tắt và giới hạn quy tắc tải về.
+**1.3.1** tách giao diện khỏi logic, tăng tương phản và cỡ chữ, làm giao diện phẳng hơn, thu gọn panel thành thanh mini khi đang phát, thêm nút chuyển sáng/tối, chuyển mã QR ủng hộ vào Cài đặt và bỏ chức năng xuất tiến độ. **1.3.0** thêm bảng điều kiện dự thi phần video, chỉ cho tiện ích bấm đúng các nút của môn học và danh sách lớp, chuyển tùy chọn Giữ phát khi chuyển tab sang mặc định tắt và giới hạn quy tắc tải về.
 
-- **59 kiểm thử tự động** với dữ liệu mô phỏng cấu trúc UTT đã qua.
-- Bản 1.3.0 chưa được kiểm tra trực tiếp trên trang UTT thật.
+- **76 kiểm thử tự động** với dữ liệu mô phỏng cấu trúc UTT đã qua.
+- Bản 1.3.1 chưa được kiểm tra trực tiếp trên trang UTT thật.
 - **Kiểm tra trực tiếp trên Chrome ngày 13/10/2026 (bản 1.2.2):** hiển thị 100%, đọc đủ 7/7 môn và 27 video cần học; danh sách đang phát video C# và nhận được số phút trường ghi nhận.
 - Chưa theo dõi một lượt xem hoàn tất toàn bộ 27 video trên trang thật. Trường có thể đổi giao diện; các lỗi mới được tiếp nhận qua Issues.
 

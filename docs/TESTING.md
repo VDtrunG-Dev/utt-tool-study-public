@@ -1,8 +1,8 @@
-# Kiểm thử bản 1.3.0
+# Kiểm thử bản 1.3.1
 
 ## Kết quả tự động
 
-56 kiểm thử đã qua với Node.js, JSDOM và đồng hồ mô phỏng. Tất cả dữ liệu trong `tests/fixture.js` là dữ liệu giả để kiểm thử; không chứa phiên đăng nhập hay hồ sơ học thật.
+76 kiểm thử đã qua với Node.js, JSDOM và đồng hồ mô phỏng. Tất cả dữ liệu trong `tests/fixture.js` là dữ liệu giả để kiểm thử; không chứa phiên đăng nhập hay hồ sơ học thật.
 
 Các nhóm hành vi được kiểm tra:
 
@@ -16,6 +16,7 @@ Các nhóm hành vi được kiểm tra:
 - Chờ khởi tạo nội dung trước khi đổi tab tiến độ; lưu đúng môn trước khi chờ dữ liệu.
 - Chỉ báo 100% khi đã đọc đủ mọi môn; giữ các môn đã đọc khi một môn lỗi.
 - Giữ trạng thái Dừng qua trang mới; giữ lựa chọn video qua chuyển môn.
+- Giao diện 1.3.1: ranh giới controller/view, tương phản nút đạt WCAG AA, cỡ chữ tối thiểu 11px, không còn gradient, dock mini khi đang phát (thu gọn, mở lại, giữ thu gọn khi chuyển môn), nút ủng hộ trong Cài đặt, nút chuyển sáng/tối (theo hệ thống cho tới khi chọn, nhớ lựa chọn), không còn xuất tiến độ.
 
 Chạy lại từ thư mục dự án:
 

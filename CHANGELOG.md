@@ -1,5 +1,18 @@
 # Lịch sử thay đổi
 
+## 1.3.1 — 26/10/2026
+
+- Tách giao diện khỏi logic: `styles.js` giữ CSS, `view.js` dựng giao diện; `content.js` chỉ còn điều khiển luồng học.
+- Tương phản nút đạt WCAG AA; cỡ chữ tối thiểu 11px.
+- Giao diện phẳng hơn: bỏ dải màu và bóng phát sáng.
+- Hàng chọn video nằm đầu danh sách và dính khi cuộn.
+- Khi đang phát, panel tự thu gọn thành thanh mini có tên bài, thời gian và nút Dừng. Panel tự mở lại khi dừng, hết danh sách hoặc có hộp xác nhận mới; giữ thu gọn khi tự chuyển môn.
+- Mã QR ủng hộ chuyển vào tab Cài đặt.
+- Thêm nút chuyển giao diện sáng/tối trên đầu panel. Mặc định theo hệ thống; lựa chọn được nhớ cho mọi trang UTT và áp dụng ngay cho các tab UTT đang mở.
+- Bỏ chức năng **Xuất tiến độ** (tải file JSON).
+- Khi Chrome không chuyển được sang môn tiếp theo, danh sách dừng và mở lại panel kèm thông báo lỗi thay vì treo ở thanh mini.
+- 76 kiểm thử tự động đã qua.
+
 ## 1.3.0 — 26/10/2026
 
 - Thêm bảng **Điều kiện dự thi · phần video**: mỗi môn hiện số phút còn thiếu, số video còn thiếu, trạng thái trường ghi và mức Còn thiếu nhiều / Sắp đủ (≤ 30 phút) / Chờ buổi Vclass / Đủ phút video. Môn lỗi và môn thiếu nhiều nhất nằm trên cùng.

@@ -1,8 +1,8 @@
-# Chính sách quyền riêng tư — Hỗ trợ học UTT
+# Chính sách quyền riêng tư — StudyQueue for UTT
 
 Cập nhật: 26/10/2026 · Áp dụng từ phiên bản 1.3.0
 
-Hỗ trợ học trực tuyến cho UTT E-learning (không chính thức) là tiện ích cộng đồng, không chính thức, do [VDtrunG-Dev](https://github.com/VDtrunG-Dev) duy trì. Tiện ích không phải sản phẩm của Trường Đại học Công nghệ Giao thông Vận tải (UTT).
+StudyQueue for UTT - Trợ lý học tập (không chính thức) là tiện ích cộng đồng do [VDtrunG-Dev](https://github.com/VDtrunG-Dev) duy trì. Tiện ích không phải sản phẩm của Trường Đại học Công nghệ Giao thông Vận tải (UTT).
 
 ## Tiện ích đọc dữ liệu gì
 
@@ -38,4 +38,4 @@ Câu hỏi về quyền riêng tư: [tạo issue trên GitHub](https://github.co
 
 ## Summary (English)
 
-UTT E-learning Study Helper is an unofficial community extension that runs only on `hoctructuyen.utt.edu.vn`. It reads course names, lesson names, credited and required minutes, completion status and the current video position from those pages, and stores them locally with `chrome.storage`. No user data is transmitted to the developer or any third party; there is no analytics or advertising. The only network request the extension makes is a periodic download of a selector file (`rules.json`, data only, no executable code) from the project's GitHub repository, sent without cookies or user data. Uninstalling the extension deletes all stored data. Contact: GitHub issues at https://github.com/VDtrunG-Dev/utt-tool-study-public.
+StudyQueue for UTT is an unofficial community extension that runs only on `hoctructuyen.utt.edu.vn`. It reads course names, lesson names, credited and required minutes, completion status and the current video position from those pages, and stores them locally with `chrome.storage`. No user data is transmitted to the developer or any third party; there is no analytics or advertising. The only network request the extension makes is a periodic download of a selector file (`rules.json`, data only, no executable code) from the project's GitHub repository, sent without cookies or user data. Uninstalling the extension deletes all stored data. Contact: GitHub issues at https://github.com/VDtrunG-Dev/utt-tool-study-public.
