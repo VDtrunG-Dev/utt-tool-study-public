@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Hướng dẫn cài đặt chi tiết
+    url: https://github.com/VDtrunG-Dev/utt-tool-study-public/blob/main/docs/CAI-DAT.md
+    about: Đọc hướng dẫn tải, giải nén, cập nhật và sử dụng trước khi báo lỗi cài đặt.

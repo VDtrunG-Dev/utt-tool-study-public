@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "selectors": {
+    "tab1": [
+      "#tab1"
+    ],
+    "tab2": [
+      "#tab2"
+    ],
+    "video": [
+      "#tnContentView video"
+    ],
+    "selectedLesson": [
+      "#tnContentList .content-selected a[href]"
+    ],
+    "currentTitle": [
+      "#tnContentView .headcontent .col-md-10"
+    ],
+    "lessonLinks": [
+      "#tnContentList a[href]"
+    ],
+    "groupArrow": [
+      "#tnContentList .__lesson-name-child .fa-chevron-down"
+    ],
+    "dialogs": [
+      "[role=\"dialog\"]",
+      ".ui-dialog",
+      ".modal.show",
+      ".swal2-popup",
+      ".sweet-alert",
+      ".p-dialog"
+    ],
+    "paginatorNext": [
+      ".ui-paginator-next:not(.ui-state-disabled):not([disabled])",
+      ".p-paginator-next:not(.p-disabled):not([disabled])"
+    ],
+    "paginatorFirst": [
+      ".ui-paginator-first:not(.ui-state-disabled):not([disabled])",
+      ".p-paginator-first:not(.p-disabled):not([disabled])"
+    ]
+  },
+  "keywords": {
+    "tab1": [
+      "noi dung"
+    ],
+    "tab2": [
+      "tien trinh"
+    ]
+  },
+  "updatedAt": "2026-10-26"
+}
